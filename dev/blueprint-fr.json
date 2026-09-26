@@ -1,7 +1,7 @@
 {
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
 	"preferredVersions": { "php": "8.3", "wp": "latest" },
-	"landingPage": "/wp-admin/admin.php?page=jeytech-opg",
+	"landingPage": "/wp-admin/admin.php?page=jeytech-gpsr",
 	"steps": [
 		{ "step": "login", "username": "admin", "password": "password" },
 		{ "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "woocommerce" }, "options": { "activate": true } },

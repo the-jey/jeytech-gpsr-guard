@@ -15,9 +15,8 @@ defined( 'ABSPATH' ) || exit;
 final class BrandFields {
 
 	public static function register(): void {
-		if ( ! taxonomy_exists( Data::TAXONOMY ) ) {
-			return;
-		}
+		// No taxonomy_exists() guard here: taxonomies register on init, after
+		// this runs on plugins_loaded. These hooks only fire on brand screens.
 		add_action( Data::TAXONOMY . '_add_form_fields', array( self::class, 'add_fields' ) );
 		add_action( Data::TAXONOMY . '_edit_form_fields', array( self::class, 'edit_fields' ), 10, 2 );
 		add_action( 'created_' . Data::TAXONOMY, array( self::class, 'save' ) );

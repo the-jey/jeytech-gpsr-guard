@@ -29,6 +29,7 @@ $brand = jeytech_gpsr_dev_brand( 'Acme', array(
 	'eu_responsible' => 'Acme EU, Berlin',
 ) );
 $check( 'Brand meta roundtrip', 'Acme Corp' === get_term_meta( $brand, 'jeytech_gpsr_manufacturer', true ) );
+$check( 'Brand screens hooked', (bool) has_action( 'product_brand_edit_form_fields', array( BrandFields::class, 'edit_fields' ) ) && (bool) has_action( 'product_brand_add_form_fields', array( BrandFields::class, 'add_fields' ) ) );
 
 $p1 = jeytech_gpsr_dev_simple( 'Inherited Lamp', $brand );
 $data = Data::for_product( $p1 );
