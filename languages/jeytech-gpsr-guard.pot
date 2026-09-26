@@ -1,0 +1,146 @@
+# Copyright (C) 2026 JeyTech
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: JeyTech GPSR Guard for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/jeytech-gpsr-guard\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-26T08:09:34+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: jeytech-gpsr-guard\n"
+
+#. Plugin Name of the plugin
+#: jeytech-gpsr-guard.php
+msgid "JeyTech GPSR Guard for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+#: jeytech-gpsr-guard.php
+msgid "Add GPSR manufacturer and safety information to every product — set it once per brand, audit what's missing."
+msgstr ""
+
+#. Author of the plugin
+#: jeytech-gpsr-guard.php
+msgid "JeyTech"
+msgstr ""
+
+#: src/Admin/AuditPage.php:36
+#: src/Admin/AuditPage.php:103
+msgid "GPSR Audit"
+msgstr ""
+
+#: src/Admin/AuditPage.php:37
+msgid "GPSR audit"
+msgstr ""
+
+#: src/Admin/AuditPage.php:105
+msgid "Missing data"
+msgstr ""
+
+#: src/Admin/AuditPage.php:106
+msgid "All products"
+msgstr ""
+
+#: src/Admin/AuditPage.php:109
+msgid "Large catalog: only the first 1,000 products are listed."
+msgstr ""
+
+#: src/Admin/AuditPage.php:112
+msgid "Product"
+msgstr ""
+
+#: src/Admin/AuditPage.php:113
+msgid "Missing fields"
+msgstr ""
+
+#: src/Admin/AuditPage.php:114
+msgid "Warnings"
+msgstr ""
+
+#: src/Admin/AuditPage.php:117
+msgid "Nothing to show: every listed product has its GPSR data."
+msgstr ""
+
+#: src/Admin/AuditPage.php:125
+msgid "Complete"
+msgstr ""
+
+#: src/Admin/AuditPage.php:133
+msgid "Set"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:41
+#: src/Admin/SettingsPage.php:74
+msgid "GPSR Guard"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:42
+msgid "GPSR safety"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:76
+msgid "Set the manufacturer data once per brand: every product inherits it. Overrides and safety warnings live on the product."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:80
+msgid "Enable"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:80
+msgid "Show the safety section on product pages"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:84
+msgid "Open the audit: products missing GPSR data"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:85
+msgid "GPSR Guard displays what you enter. It is not legal advice and does not guarantee compliance."
+msgstr ""
+
+#. translators: %s: minimum WooCommerce version.
+#: src/Core/Requirements.php:38
+#, php-format
+msgid "JeyTech GPSR Guard for WooCommerce needs WooCommerce %s or later to run."
+msgstr ""
+
+#: src/Data.php:39
+msgid "Manufacturer"
+msgstr ""
+
+#: src/Data.php:40
+msgid "Manufacturer address"
+msgstr ""
+
+#: src/Data.php:41
+msgid "Manufacturer email"
+msgstr ""
+
+#: src/Data.php:42
+msgid "EU responsible person"
+msgstr ""
+
+#: src/Data.php:43
+msgid "Safety warnings"
+msgstr ""
+
+#: src/Frontend/Safety.php:52
+msgid "Product Safety"
+msgstr ""
+
+#: src/ProductFields.php:31
+msgid "GPSR"
+msgstr ""
+
+#: src/ProductFields.php:47
+msgid "Leave a field empty to use the brand value. Variations use their parent product."
+msgstr ""
+
+#: src/ProductFields.php:55
+msgid "Empty: inherit from the brand."
+msgstr ""
