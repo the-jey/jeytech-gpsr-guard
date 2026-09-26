@@ -69,7 +69,9 @@ final class BrandFields {
 			return;
 		}
 		foreach ( Data::FIELDS as $field ) {
-			$raw = wp_unslash( $_POST[ 'jeytech_gpsr_' . $field ] ?? '' ); // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Core verified the term form nonce before this hook.
+			$key = 'jeytech_gpsr_' . $field;
+			// phpcs:ignore WordPress.Security.NonceVerification.Missing -- Core verified the term form nonce before this hook.
+			$raw = isset( $_POST[ $key ] ) ? sanitize_text_field( wp_unslash( $_POST[ $key ] ) ) : '';
 			update_term_meta( $term_id, Data::brand_key( $field ), Data::sanitize_field( $field, $raw ) );
 		}
 	}

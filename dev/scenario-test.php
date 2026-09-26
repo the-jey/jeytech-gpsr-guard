@@ -1,6 +1,8 @@
 <?php
 use JeyTech\GpsrGuard\Admin\AuditPage;
+use JeyTech\GpsrGuard\BrandFields;
 use JeyTech\GpsrGuard\Data;
+use JeyTech\GpsrGuard\ProductFields;
 use JeyTech\GpsrGuard\Frontend\Safety;
 use JeyTech\GpsrGuard\Settings;
 
@@ -96,6 +98,19 @@ foreach ( AuditPage::rows()['rows'] as $row ) {
 $check( 'Audit flags missing and complete products',
 	isset( $rows[ $p4 ] ) && 4 === count( $rows[ $p4 ]['missing'] )
 	&& isset( $rows[ $p1 ] ) && array() === $rows[ $p1 ]['missing'] );
+
+wp_set_current_user( 1 );
+$_POST['jeytech_gpsr_manufacturer'] = 'Saved Corp';
+BrandFields::save( $brand );
+$check( 'Brand save handler stores sanitized fields', 'Saved Corp' === get_term_meta( $brand, 'jeytech_gpsr_manufacturer', true ) );
+update_term_meta( $brand, 'jeytech_gpsr_manufacturer', 'Acme Corp' );
+$_POST = array();
+
+$p5 = jeytech_gpsr_dev_simple( 'Saved Table' );
+$_POST = array( '_jeytech_gpsr_warnings' => 'Keep <i>dry</i>' );
+ProductFields::save( $p5 );
+$check( 'Product save handler stores sanitized fields', 'Keep dry' === get_post_meta( $p5, '_jeytech_gpsr_warnings', true ) );
+$_POST = array();
 
 $store  = \Automattic\WooCommerce\Utilities\OrderUtil::custom_orders_table_usage_is_enabled() ? 'hpos' : 'posts';
 $report = sprintf( "GPSR Guard — scénario (%s, PHP %s, WP %s, WC %s)\n", strtoupper( $store ), PHP_VERSION, get_bloginfo( 'version' ), WC_VERSION )

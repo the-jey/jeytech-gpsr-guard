@@ -84,6 +84,7 @@ final class AuditPage {
 		if ( ! current_user_can( self::CAPABILITY ) ) {
 			return;
 		}
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only list filter, sanitized, no state change.
 		$filter = isset( $_GET['gpsr_status'] ) ? sanitize_key( (string) $_GET['gpsr_status'] ) : 'missing';
 		if ( ! in_array( $filter, array( 'missing', 'all' ), true ) ) {
 			$filter = 'missing';

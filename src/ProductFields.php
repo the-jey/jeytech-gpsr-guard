@@ -73,8 +73,13 @@ final class ProductFields {
 			return;
 		}
 		foreach ( array_merge( Data::FIELDS, array( 'warnings' ) ) as $field ) {
-			$raw = wp_unslash( $_POST[ Data::product_key( $field ) ] ?? '' ); // phpcs:ignore WordPress.Security.NonceVerification.Missing -- WooCommerce verified the product form nonce before this hook.
-			update_post_meta( $product_id, Data::product_key( $field ), Data::sanitize_field( $field, $raw ) );
+			$key = Data::product_key( $field );
+			// phpcs:disable WordPress.Security.NonceVerification.Missing -- WooCommerce verified the product form nonce before this hook.
+			$raw = 'warnings' === $field
+				? sanitize_textarea_field( wp_unslash( $_POST[ $key ] ?? '' ) )
+				: sanitize_text_field( wp_unslash( $_POST[ $key ] ?? '' ) );
+			// phpcs:enable WordPress.Security.NonceVerification.Missing
+			update_post_meta( $product_id, $key, Data::sanitize_field( $field, $raw ) );
 		}
 	}
 }
