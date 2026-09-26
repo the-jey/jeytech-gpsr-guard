@@ -1,0 +1,9 @@
+node_modules/
+.pi/
+.env*
+!.env.example
+dist/
+dev/.test-output-*.txt
+dev/.plugin-check.txt
+.DS_Store
+dev/.test-progress.txt

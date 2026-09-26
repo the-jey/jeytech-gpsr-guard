@@ -1,0 +1,22 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"preferredVersions": { "php": "8.3", "wp": "latest" },
+	"landingPage": "/wp-admin/admin.php?page=jeytech-opg",
+	"steps": [
+		{ "step": "login", "username": "admin", "password": "password" },
+		{ "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "woocommerce" }, "options": { "activate": true } },
+		{ "step": "wp-cli", "command": "wp wc hpos enable" },
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "Boutique démo JeyTech",
+				"woocommerce_currency": "EUR",
+				"woocommerce_default_country": "FR",
+				"woocommerce_task_list_hidden": "yes",
+				"woocommerce_onboarding_profile": { "skipped": true }
+			}
+		},
+		{ "step": "activatePlugin", "pluginPath": "jeytech-gpsr-guard/jeytech-gpsr-guard.php" },
+		{ "step": "wp-cli", "command": "wp eval-file /wordpress/wp-content/plugins/jeytech-gpsr-guard/dev/seed.php" }
+	]
+}
