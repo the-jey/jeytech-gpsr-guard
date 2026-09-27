@@ -2,15 +2,15 @@
 /**
  * Plugin bootstrap: wires every hook.
  *
- * @package JeyTech\GpsrGuard
+ * @package JeyTech\SafetyDataByBrand
  */
 
-namespace JeyTech\GpsrGuard;
+namespace JeyTech\SafetyDataByBrand;
 
-use JeyTech\GpsrGuard\Admin\AuditPage;
-use JeyTech\GpsrGuard\Admin\SettingsPage;
-use JeyTech\GpsrGuard\Core\Requirements;
-use JeyTech\GpsrGuard\Frontend\Safety;
+use JeyTech\SafetyDataByBrand\Admin\AuditPage;
+use JeyTech\SafetyDataByBrand\Admin\SettingsPage;
+use JeyTech\SafetyDataByBrand\Core\Requirements;
+use JeyTech\SafetyDataByBrand\Frontend\Safety;
 
 defined( 'ABSPATH' ) || exit;
 

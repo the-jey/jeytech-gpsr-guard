@@ -1,4 +1,4 @@
-# JeyTech GPSR Guard for WooCommerce — dépôt de développement
+# JeyTech Safety Data by Brand for WooCommerce — dépôt de développement
 
 Affiche les informations GPSR (fabricant, responsable UE, avertissements) sur les fiches produit : saisie unique par marque (taxonomie core), héritage produit, section « Sécurité du produit », audit des produits sans données. Ce fichier n’est pas livré dans le ZIP (voir `.distignore`).
 
@@ -16,13 +16,13 @@ Node.js uniquement : WordPress, WooCommerce et PHP tournent dans [WordPress Play
 | `npm run test:legacy` | Même scénario, stockage classique des commandes, PHP 7.4 |
 | `npm run i18n` | Régénère le `.pot`, compile `.mo` et `.l10n.php` depuis les `.po` (le dossier `languages/` reste local) |
 | `npm run check` | Construit le ZIP puis lance Plugin Check (vérifications statiques) sur son contenu |
-| `npm run build` | `dist/jeytech-gpsr-guard.zip` |
+| `npm run build` | `dist/jeytech-safety-data-by-brand.zip` |
 
 Rapports : `dev/.test-output-<hpos|posts>.txt`, `dev/.plugin-check.txt`.
 
 ## Structure
 
-- `jeytech-gpsr-guard.php` — en-tête, constantes, autoload, compatibilité.
+- `jeytech-safety-data-by-brand.php` — en-tête, constantes, autoload, compatibilité.
 - `src/Core/` — partie générique du boilerplate JeyTech (autoloader, prérequis, déclarations HPOS/Blocks).
 - `src/Data.php` — champs, résolution marque → produit, sanitization.
 - `src/BrandFields.php`, `src/ProductFields.php` — écrans de saisie.
@@ -30,7 +30,7 @@ Rapports : `dev/.test-output-<hpos|posts>.txt`, `dev/.plugin-check.txt`.
 - `src/Admin/SettingsPage.php`, `src/Admin/AuditPage.php` — réglages et audit.
 - `dev/` — blueprints Playground, jeu de démo, scénario de test, sources des visuels. `.wordpress-org/` — icône, bannière et captures pour le SVN (dossier `assets`).
 
-Points d’extension prévus pour le Pro : filtres `jeytech_gpsr_data` (données résolues), `jeytech_gpsr_should_display` (exclusions) et `jeytech_gpsr_tab_title`.
+Points d’extension prévus pour le Pro : filtres `jeytech_sdbb_data` (données résolues), `jeytech_sdbb_should_display` (exclusions) et `jeytech_sdbb_tab_title`.
 
 ## Limites connues de Playground
 
@@ -40,4 +40,10 @@ Points d’extension prévus pour le Pro : filtres `jeytech_gpsr_data` (données
 
 ## Publication WordPress.org
 
-Nom retenu : « JeyTech GPSR Guard for WooCommerce » (le préfixe distingue de « Rampedigitale GPSR Guard », déjà présent). Slug demandé : `jeytech-gpsr-guard`.
+Contrôle du 27/09/2026 : l’ancien nom « JeyTech GPSR Guard for WooCommerce » reprend « GPSR Guard », déjà utilisé par [Rampedigitale GPSR Guard](https://wordpress.org/plugins/rampedigitale-gpsr-guard/) et par le logiciel [GPSR-Guard](https://gpsr-software.de/gpsr-software). Le préfixe JeyTech ne suffit pas à rendre cette base originale : nom abandonné avant soumission.
+
+Nom adopté : **JeyTech Safety Data by Brand for WooCommerce**, slug `jeytech-safety-data-by-brand`. Les recherches publiques du nom et de « Safety Data by Brand » ne trouvent aucune extension ; l’API du slug renvoie « Plugin not found ». Le slug court a ensuite été attribué dans le dossier de soumission WordPress.org ; l’approbation finale reste à obtenir.
+
+Résultats et sources : [audit du nom](dev/name-audit-2026-09-27.json). Renommage appliqué au code, au domaine de traduction, aux outils, à la bannière et aux captures EN/FR. Le dépôt GitHub conserve son URL historique. ZIP 1.0.0 soumis le 27/09/2026 via le compte `jeytech` : **Awaiting Review**, analyse automatique **Pass**. Le slug automatique `jeytech-safety-data-by-brand-for-woocommerce` a été corrigé immédiatement en `jeytech-safety-data-by-brand`, aligné sur le domaine de traduction. SHA-256 du ZIP envoyé : `27c25cf74b6857727d1dc899560caf0a0a64dea240357c4e19b0cbf20416397e`.
+
+Validation : 18 vérifications HPOS/PHP 8.3 + 18 en stockage classique/PHP 7.4 ; Plugin Check statique : 0 erreur, 0 avertissement. Les 15 fichiers du ZIP sont identiques aux sources ; traductions et fichiers de développement exclus. Visuels mis à jour avec ImageGen intégré ; prompt versionné dans `dev/assets-src/banner-safety-data-by-brand-prompt.md`.

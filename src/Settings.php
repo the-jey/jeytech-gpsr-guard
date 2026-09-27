@@ -2,10 +2,10 @@
 /**
  * Plugin settings, stored in a single option.
  *
- * @package JeyTech\GpsrGuard
+ * @package JeyTech\SafetyDataByBrand
  */
 
-namespace JeyTech\GpsrGuard;
+namespace JeyTech\SafetyDataByBrand;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
  */
 final class Settings {
 
-	const OPTION = 'jeytech_gpsr_settings';
+	const OPTION = 'jeytech_sdbb_settings';
 
 	/**
 	 * Default values: the safety section is displayed.

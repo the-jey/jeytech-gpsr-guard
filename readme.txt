@@ -1,4 +1,4 @@
-=== JeyTech GPSR Guard for WooCommerce ===
+=== JeyTech Safety Data by Brand for WooCommerce ===
 Contributors: jeytech
 Tags: woocommerce, gpsr, product safety, manufacturer, brands
 Requires at least: 6.5
@@ -15,7 +15,7 @@ Add GPSR manufacturer and safety information to every product — set it once pe
 
 Since 13 December 2024, EU Regulation 2023/988 (GPSR) requires online offers to show the manufacturer's name and contact details, the EU responsible person when the manufacturer is outside the EU, and the product safety warnings. WooCommerce has no fields for any of this.
 
-GPSR Guard adds them where they belong:
+Safety Data by Brand adds them where they belong:
 
 * **Set once per brand** — manufacturer, address, email and EU responsible person live on the brand (WooCommerce core taxonomy). Every product of the brand inherits them.
 * **Override per product** — any field can be replaced on a single product. Variations use their parent's data.
@@ -23,7 +23,7 @@ GPSR Guard adds them where they belong:
 * **"Product Safety" section on the page** — a product tab on classic themes, an appended section on block themes. Nothing shows when a product has no data.
 * **Audit list** — the admin screen lists the products still missing GPSR data.
 
-GPSR Guard displays what you enter. It is not legal advice and does not guarantee compliance.
+Safety Data by Brand displays what you enter. It is not legal advice and does not guarantee compliance.
 
 Compatible with High-Performance Order Storage (HPOS) and the Cart & Checkout blocks. Requires WooCommerce 9.6 or later for the core Brands taxonomy.
 

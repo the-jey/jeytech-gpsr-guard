@@ -5,7 +5,7 @@
  * Executed by a `runPHP` blueprint step, not WP-CLI: under WP-CLI in Playground, PHP_CodeSniffer
  * tries to read php://stdin and crashes. Outside the CLI, STDIN is undefined and PHPCS skips it.
  *
- * @package JeyTech\GpsrGuard
+ * @package JeyTech\SafetyDataByBrand
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -14,18 +14,18 @@ use WordPress\Plugin_Check\Checker\AJAX_Runner;
 use WordPress\Plugin_Check\Checker\Check_Repository;
 use WordPress\Plugin_Check\Checker\Default_Check_Repository;
 
-$jeytech_gpsr_out = __DIR__ . '/.plugin-check.txt';
-$jeytech_gpsr_txt = array();
+$jeytech_sdbb_out = __DIR__ . '/.plugin-check.txt';
+$jeytech_sdbb_txt = array();
 
 try {
 	// Static checks only: runtime checks need a secondary test database that Playground's SQLite refuses.
 	$static = ( new Default_Check_Repository() )->get_checks( Check_Repository::TYPE_STATIC | Check_Repository::INCLUDE_EXPERIMENTAL );
 
 	$runner = new AJAX_Runner();
-	$runner->set_plugin( 'jeytech-gpsr-guard' );
+	$runner->set_plugin( 'jeytech-safety-data-by-brand' );
 	$runner->set_experimental_flag( true );
 	$runner->set_check_slugs( array_keys( $static->to_map() ) );
-	$jeytech_gpsr_txt[] = 'Vérifications statiques lancées : ' . implode( ', ', array_keys( $static->to_map() ) );
+	$jeytech_sdbb_txt[] = 'Vérifications statiques lancées : ' . implode( ', ', array_keys( $static->to_map() ) );
 	$cleanup = $runner->prepare();
 	$result  = $runner->run();
 	$cleanup();
@@ -35,16 +35,16 @@ try {
 			foreach ( $lines as $line => $columns ) {
 				foreach ( $columns as $column => $messages ) {
 					foreach ( $messages as $message ) {
-						$jeytech_gpsr_txt[] = sprintf( '%-7s %s:%d:%d  [%s] %s', $type, $file, $line, $column, $message['code'] ?? '', wp_strip_all_tags( $message['message'] ?? '' ) );
+						$jeytech_sdbb_txt[] = sprintf( '%-7s %s:%d:%d  [%s] %s', $type, $file, $line, $column, $message['code'] ?? '', wp_strip_all_tags( $message['message'] ?? '' ) );
 					}
 				}
 			}
 		}
 	}
-	$jeytech_gpsr_summary = sprintf( 'Plugin Check — %d erreur(s), %d avertissement(s)', $result->get_error_count(), $result->get_warning_count() );
+	$jeytech_sdbb_summary = sprintf( 'Plugin Check — %d erreur(s), %d avertissement(s)', $result->get_error_count(), $result->get_warning_count() );
 } catch ( \Throwable $e ) {
-	$jeytech_gpsr_summary = 'Plugin Check — exception : ' . $e->getMessage() . ' (' . $e->getFile() . ':' . $e->getLine() . ')';
+	$jeytech_sdbb_summary = 'Plugin Check — exception : ' . $e->getMessage() . ' (' . $e->getFile() . ':' . $e->getLine() . ')';
 }
 
 // phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents
-file_put_contents( $jeytech_gpsr_out, $jeytech_gpsr_summary . "\n" . implode( "\n", $jeytech_gpsr_txt ) . "\n" );
+file_put_contents( $jeytech_sdbb_out, $jeytech_sdbb_summary . "\n" . implode( "\n", $jeytech_sdbb_txt ) . "\n" );

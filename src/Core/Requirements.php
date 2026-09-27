@@ -2,10 +2,10 @@
 /**
  * Runtime requirements check.
  *
- * @package JeyTech\GpsrGuard
+ * @package JeyTech\SafetyDataByBrand
  */
 
-namespace JeyTech\GpsrGuard\Core;
+namespace JeyTech\SafetyDataByBrand\Core;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -35,7 +35,7 @@ final class Requirements {
 			esc_html(
 				sprintf(
 					/* translators: %s: minimum WooCommerce version. */
-					__( 'JeyTech GPSR Guard for WooCommerce needs WooCommerce %s or later to run.', 'jeytech-gpsr-guard' ),
+					__( 'JeyTech Safety Data by Brand for WooCommerce needs WooCommerce %s or later to run.', 'jeytech-safety-data-by-brand' ),
 					self::MIN_WC_VERSION
 				)
 			)

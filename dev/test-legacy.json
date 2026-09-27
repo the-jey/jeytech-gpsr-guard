@@ -4,7 +4,7 @@
 	"steps": [
 		{ "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "woocommerce" }, "options": { "activate": true } },
 		{ "step": "setSiteOptions", "options": { "woocommerce_custom_orders_table_enabled": "no", "woocommerce_custom_orders_table_data_sync_enabled": "no" } },
-		{ "step": "activatePlugin", "pluginPath": "jeytech-gpsr-guard/jeytech-gpsr-guard.php" },
-		{ "step": "wp-cli", "command": "wp eval-file /wordpress/wp-content/plugins/jeytech-gpsr-guard/dev/scenario-test.php" }
+		{ "step": "activatePlugin", "pluginPath": "jeytech-safety-data-by-brand/jeytech-safety-data-by-brand.php" },
+		{ "step": "wp-cli", "command": "wp eval-file /wordpress/wp-content/plugins/jeytech-safety-data-by-brand/dev/scenario-test.php" }
 	]
 }

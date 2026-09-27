@@ -1,7 +1,7 @@
 {
 	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
 	"preferredVersions": { "php": "8.3", "wp": "latest" },
-	"landingPage": "/wp-admin/admin.php?page=jeytech-gpsr",
+	"landingPage": "/wp-admin/admin.php?page=jeytech-sdbb",
 	"steps": [
 		{ "step": "login", "username": "admin", "password": "password" },
 		{ "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "woocommerce" }, "options": { "activate": true } },
@@ -16,7 +16,7 @@
 				"woocommerce_onboarding_profile": { "skipped": true }
 			}
 		},
-		{ "step": "activatePlugin", "pluginPath": "jeytech-gpsr-guard/jeytech-gpsr-guard.php" },
-		{ "step": "wp-cli", "command": "wp eval-file /wordpress/wp-content/plugins/jeytech-gpsr-guard/dev/seed.php" }
+		{ "step": "activatePlugin", "pluginPath": "jeytech-safety-data-by-brand/jeytech-safety-data-by-brand.php" },
+		{ "step": "wp-cli", "command": "wp eval-file /wordpress/wp-content/plugins/jeytech-safety-data-by-brand/dev/seed.php" }
 	]
 }

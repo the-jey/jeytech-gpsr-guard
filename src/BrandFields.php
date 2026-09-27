@@ -2,10 +2,10 @@
 /**
  * GPSR fields on the core Brands taxonomy.
  *
- * @package JeyTech\GpsrGuard
+ * @package JeyTech\SafetyDataByBrand
  */
 
-namespace JeyTech\GpsrGuard;
+namespace JeyTech\SafetyDataByBrand;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -33,8 +33,8 @@ final class BrandFields {
 		foreach ( Data::FIELDS as $field ) {
 			?>
 			<div class="form-field">
-				<label for="jeytech-gpsr-<?php echo esc_attr( $field ); ?>"><?php echo esc_html( Data::labels()[ $field ] ); ?></label>
-				<input type="text" id="jeytech-gpsr-<?php echo esc_attr( $field ); ?>" name="jeytech_gpsr_<?php echo esc_attr( $field ); ?>" value="" />
+				<label for="jeytech-sdbb-<?php echo esc_attr( $field ); ?>"><?php echo esc_html( Data::labels()[ $field ] ); ?></label>
+				<input type="text" id="jeytech-sdbb-<?php echo esc_attr( $field ); ?>" name="jeytech_sdbb_<?php echo esc_attr( $field ); ?>" value="" />
 			</div>
 			<?php
 		}
@@ -53,8 +53,8 @@ final class BrandFields {
 			$value = get_term_meta( $term->term_id, Data::brand_key( $field ), true );
 			?>
 			<tr class="form-field">
-				<th scope="row"><label for="jeytech-gpsr-<?php echo esc_attr( $field ); ?>"><?php echo esc_html( Data::labels()[ $field ] ); ?></label></th>
-				<td><input type="text" id="jeytech-gpsr-<?php echo esc_attr( $field ); ?>" name="jeytech_gpsr_<?php echo esc_attr( $field ); ?>" value="<?php echo esc_attr( (string) $value ); ?>" /></td>
+				<th scope="row"><label for="jeytech-sdbb-<?php echo esc_attr( $field ); ?>"><?php echo esc_html( Data::labels()[ $field ] ); ?></label></th>
+				<td><input type="text" id="jeytech-sdbb-<?php echo esc_attr( $field ); ?>" name="jeytech_sdbb_<?php echo esc_attr( $field ); ?>" value="<?php echo esc_attr( (string) $value ); ?>" /></td>
 			</tr>
 			<?php
 		}
@@ -68,7 +68,7 @@ final class BrandFields {
 			return;
 		}
 		foreach ( Data::FIELDS as $field ) {
-			$key = 'jeytech_gpsr_' . $field;
+			$key = 'jeytech_sdbb_' . $field;
 			// phpcs:ignore WordPress.Security.NonceVerification.Missing -- Core verified the term form nonce before this hook.
 			$raw = isset( $_POST[ $key ] ) ? sanitize_text_field( wp_unslash( $_POST[ $key ] ) ) : '';
 			update_term_meta( $term_id, Data::brand_key( $field ), Data::sanitize_field( $field, $raw ) );

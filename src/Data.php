@@ -2,10 +2,10 @@
 /**
  * GPSR data model: brand term meta, product overrides, warnings.
  *
- * @package JeyTech\GpsrGuard
+ * @package JeyTech\SafetyDataByBrand
  */
 
-namespace JeyTech\GpsrGuard;
+namespace JeyTech\SafetyDataByBrand;
 
 use WC_Product;
 
@@ -36,11 +36,11 @@ final class Data {
 	 */
 	public static function labels(): array {
 		return array(
-			'manufacturer'   => __( 'Manufacturer', 'jeytech-gpsr-guard' ),
-			'address'        => __( 'Manufacturer address', 'jeytech-gpsr-guard' ),
-			'email'          => __( 'Manufacturer email', 'jeytech-gpsr-guard' ),
-			'eu_responsible' => __( 'EU responsible person', 'jeytech-gpsr-guard' ),
-			'warnings'       => __( 'Safety warnings', 'jeytech-gpsr-guard' ),
+			'manufacturer'   => __( 'Manufacturer', 'jeytech-safety-data-by-brand' ),
+			'address'        => __( 'Manufacturer address', 'jeytech-safety-data-by-brand' ),
+			'email'          => __( 'Manufacturer email', 'jeytech-safety-data-by-brand' ),
+			'eu_responsible' => __( 'EU responsible person', 'jeytech-safety-data-by-brand' ),
+			'warnings'       => __( 'Safety warnings', 'jeytech-safety-data-by-brand' ),
 		);
 	}
 
@@ -48,7 +48,7 @@ final class Data {
 	 * Term meta key for a brand field.
 	 */
 	public static function brand_key( string $field ): string {
-		return 'jeytech_gpsr_' . $field;
+		return 'jeytech_sdbb_' . $field;
 	}
 
 	/**
@@ -56,7 +56,7 @@ final class Data {
 	 * the Custom Fields box.
 	 */
 	public static function product_key( string $field ): string {
-		return '_jeytech_gpsr_' . $field;
+		return '_jeytech_sdbb_' . $field;
 	}
 
 	/**
@@ -132,7 +132,7 @@ final class Data {
 		 * @param array $data       Resolved fields.
 		 * @param int   $product_id Canonical (parent) product ID.
 		 */
-		return (array) apply_filters( 'jeytech_gpsr_data', $data, $product_id );
+		return (array) apply_filters( 'jeytech_sdbb_data', $data, $product_id );
 	}
 
 	/**

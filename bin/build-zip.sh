@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# Construit dist/jeytech-gpsr-guard.zip (fichiers exclus : voir .distignore).
+# Construit dist/jeytech-safety-data-by-brand.zip (fichiers exclus : voir .distignore).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-slug="jeytech-gpsr-guard"
+slug="jeytech-safety-data-by-brand"
 version="$(grep -m1 -E '^[[:space:]]*\*[[:space:]]*Version:' "$slug.php" | awk '{print $NF}')"
-constant="$(grep -m1 "JEYTECH_GPSR_VERSION'," "$slug.php" | sed -E "s/.*'([0-9.]+)'.*/\1/")"
+constant="$(grep -m1 "JEYTECH_SDBB_VERSION'," "$slug.php" | sed -E "s/.*'([0-9.]+)'.*/\1/")"
 stable="$(grep -m1 '^Stable tag:' readme.txt | awk '{print $NF}')"
 
 if [[ "$version" != "$stable" || "$version" != "$constant" ]]; then

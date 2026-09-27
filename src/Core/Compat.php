@@ -2,10 +2,10 @@
 /**
  * WooCommerce feature compatibility declarations.
  *
- * @package JeyTech\GpsrGuard
+ * @package JeyTech\SafetyDataByBrand
  */
 
-namespace JeyTech\GpsrGuard\Core;
+namespace JeyTech\SafetyDataByBrand\Core;
 
 use Automattic\WooCommerce\Utilities\FeaturesUtil;
 
@@ -23,7 +23,7 @@ final class Compat {
 		if ( ! class_exists( FeaturesUtil::class ) ) {
 			return;
 		}
-		FeaturesUtil::declare_compatibility( 'custom_order_tables', JEYTECH_GPSR_FILE, true );
-		FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', JEYTECH_GPSR_FILE, true );
+		FeaturesUtil::declare_compatibility( 'custom_order_tables', JEYTECH_SDBB_FILE, true );
+		FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', JEYTECH_SDBB_FILE, true );
 	}
 }

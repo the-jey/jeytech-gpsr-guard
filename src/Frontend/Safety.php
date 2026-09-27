@@ -2,13 +2,13 @@
 /**
  * Displays the safety section on product pages.
  *
- * @package JeyTech\GpsrGuard\Frontend
+ * @package JeyTech\SafetyDataByBrand\Frontend
  */
 
-namespace JeyTech\GpsrGuard\Frontend;
+namespace JeyTech\SafetyDataByBrand\Frontend;
 
-use JeyTech\GpsrGuard\Data;
-use JeyTech\GpsrGuard\Settings;
+use JeyTech\SafetyDataByBrand\Data;
+use JeyTech\SafetyDataByBrand\Settings;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -37,7 +37,7 @@ final class Safety {
 		 * @param bool $display    Whether to display.
 		 * @param int  $product_id Canonical (parent) product ID.
 		 */
-		return (bool) apply_filters( 'jeytech_gpsr_should_display', true, Data::canonical_id( $product_id ) );
+		return (bool) apply_filters( 'jeytech_sdbb_should_display', true, Data::canonical_id( $product_id ) );
 	}
 
 	/**
@@ -49,7 +49,7 @@ final class Safety {
 		 *
 		 * @param string $title Default title.
 		 */
-		return (string) apply_filters( 'jeytech_gpsr_tab_title', __( 'Product Safety', 'jeytech-gpsr-guard' ) );
+		return (string) apply_filters( 'jeytech_sdbb_tab_title', __( 'Product Safety', 'jeytech-safety-data-by-brand' ) );
 	}
 
 	/**
@@ -62,7 +62,7 @@ final class Safety {
 		if ( ! $product_id || ! self::should_display( (int) $product_id ) ) {
 			return $tabs;
 		}
-		$tabs['jeytech_gpsr'] = array(
+		$tabs['jeytech_sdbb'] = array(
 			'title'    => self::title(),
 			'priority' => 40,
 			'callback' => array( self::class, 'render' ),
@@ -100,7 +100,7 @@ final class Safety {
 	public static function section_html( int $product_id ): string {
 		$data   = Data::for_product( $product_id );
 		$labels = Data::labels();
-		$html   = '<section class="jeytech-gpsr-safety"><h2>' . esc_html( self::title() ) . '</h2><dl>';
+		$html   = '<section class="jeytech-sdbb-safety"><h2>' . esc_html( self::title() ) . '</h2><dl>';
 		foreach ( Data::FIELDS as $field ) {
 			if ( '' === $data[ $field ] ) {
 				continue;

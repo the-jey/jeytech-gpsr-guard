@@ -15,7 +15,7 @@ rm -f dev/.test-output-*.txt
 
 npx wp-playground-cli run-blueprint \
 	--blueprint="$blueprint" \
-	--mount=.:/wordpress/wp-content/plugins/jeytech-gpsr-guard
+	--mount=.:/wordpress/wp-content/plugins/jeytech-safety-data-by-brand
 code=$?
 
 if [[ ! -f "$report" ]]; then

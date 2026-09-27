@@ -2,10 +2,10 @@
 /**
  * Minimal PSR-4 autoloader (no Composer needed at runtime).
  *
- * @package JeyTech\GpsrGuard
+ * @package JeyTech\SafetyDataByBrand
  */
 
-namespace JeyTech\GpsrGuard\Core;
+namespace JeyTech\SafetyDataByBrand\Core;
 
 defined( 'ABSPATH' ) || exit;
 

@@ -1,13 +1,13 @@
 <?php
-use JeyTech\GpsrGuard\Admin\AuditPage;
-use JeyTech\GpsrGuard\BrandFields;
-use JeyTech\GpsrGuard\Data;
-use JeyTech\GpsrGuard\ProductFields;
-use JeyTech\GpsrGuard\Frontend\Safety;
-use JeyTech\GpsrGuard\Settings;
+use JeyTech\SafetyDataByBrand\Admin\AuditPage;
+use JeyTech\SafetyDataByBrand\BrandFields;
+use JeyTech\SafetyDataByBrand\Data;
+use JeyTech\SafetyDataByBrand\ProductFields;
+use JeyTech\SafetyDataByBrand\Frontend\Safety;
+use JeyTech\SafetyDataByBrand\Settings;
 
 defined( 'ABSPATH' ) || exit;
-require_once WP_PLUGIN_DIR . '/jeytech-gpsr-guard/dev/lib.php';
+require_once WP_PLUGIN_DIR . '/jeytech-safety-data-by-brand/dev/lib.php';
 
 $lines    = array();
 $failures = 0;
@@ -18,31 +18,31 @@ $check    = static function ( string $name, bool $passed ) use ( &$lines, &$fail
 	}
 };
 
-jeytech_gpsr_dev_setup_store();
+jeytech_sdbb_dev_setup_store();
 
 $check( 'Brands taxonomy registered by WooCommerce', taxonomy_exists( 'product_brand' ) );
 
-$brand = jeytech_gpsr_dev_brand( 'Acme', array(
+$brand = jeytech_sdbb_dev_brand( 'Acme', array(
 	'manufacturer'   => 'Acme Corp',
 	'address'        => '1 rue de l’Usine, Paris',
 	'email'          => 'contact@acme.example',
 	'eu_responsible' => 'Acme EU, Berlin',
 ) );
-$check( 'Brand meta roundtrip', 'Acme Corp' === get_term_meta( $brand, 'jeytech_gpsr_manufacturer', true ) );
+$check( 'Brand meta roundtrip', 'Acme Corp' === get_term_meta( $brand, 'jeytech_sdbb_manufacturer', true ) );
 $check( 'Brand screens hooked', (bool) has_action( 'product_brand_edit_form_fields', array( BrandFields::class, 'edit_fields' ) ) && (bool) has_action( 'product_brand_add_form_fields', array( BrandFields::class, 'add_fields' ) ) );
 
-$p1 = jeytech_gpsr_dev_simple( 'Inherited Lamp', $brand );
+$p1 = jeytech_sdbb_dev_simple( 'Inherited Lamp', $brand );
 $data = Data::for_product( $p1 );
 $check( 'Product inherits brand data', 'Acme Corp' === $data['manufacturer'] && 'contact@acme.example' === $data['email'] && $brand === $data['inherited_from'] );
 
-$p2 = jeytech_gpsr_dev_simple( 'Override Chair', $brand, array( 'manufacturer' => 'Atelier Nord' ) );
+$p2 = jeytech_sdbb_dev_simple( 'Override Chair', $brand, array( 'manufacturer' => 'Atelier Nord' ) );
 $data2 = Data::for_product( $p2 );
 $check( 'Product override wins over brand', 'Atelier Nord' === $data2['manufacturer'] && '1 rue de l’Usine, Paris' === $data2['address'] );
 
-$p3 = jeytech_gpsr_dev_simple( 'Warned Kettle', $brand, array( 'warnings' => "Hot surface.\nKeep away from children." ) );
+$p3 = jeytech_sdbb_dev_simple( 'Warned Kettle', $brand, array( 'warnings' => "Hot surface.\nKeep away from children." ) );
 $check( 'Warnings live on the product', "Hot surface.\nKeep away from children." === Data::for_product( $p3 )['warnings'] );
 
-$p4 = jeytech_gpsr_dev_simple( 'Lonely Mug' );
+$p4 = jeytech_sdbb_dev_simple( 'Lonely Mug' );
 $check( 'Missing fields listed without brand', array( 'manufacturer', 'address', 'email', 'eu_responsible' ) === Data::missing_for( $p4 ) );
 $check( 'Complete product has no missing field', array() === Data::missing_for( $p1 ) );
 
@@ -63,34 +63,34 @@ $with_post = static function ( int $product_id, callable $run ) {
 };
 $check( 'Tab present with data', $with_post( $p1, static function (): bool {
 	$tabs = apply_filters( 'woocommerce_product_tabs', array() );
-	return isset( $tabs['jeytech_gpsr'] ) && 'Product Safety' === $tabs['jeytech_gpsr']['title'];
+	return isset( $tabs['jeytech_sdbb'] ) && 'Product Safety' === $tabs['jeytech_sdbb']['title'];
 } ) );
 $check( 'Tab absent without data', $with_post( $p4, static function (): bool {
-	return ! isset( apply_filters( 'woocommerce_product_tabs', array() )['jeytech_gpsr'] );
+	return ! isset( apply_filters( 'woocommerce_product_tabs', array() )['jeytech_sdbb'] );
 } ) );
 
 update_option( Settings::OPTION, array( 'enabled' => false ), false );
 $check( 'Disabled hides the tab', $with_post( $p1, static function (): bool {
-	return ! isset( apply_filters( 'woocommerce_product_tabs', array() )['jeytech_gpsr'] );
+	return ! isset( apply_filters( 'woocommerce_product_tabs', array() )['jeytech_sdbb'] );
 } ) );
 update_option( Settings::OPTION, array( 'enabled' => true ), false );
 
-update_post_meta( $p3, '_jeytech_gpsr_warnings', 'Careful <b>now</b>' );
+update_post_meta( $p3, '_jeytech_sdbb_warnings', 'Careful <b>now</b>' );
 $html = Safety::section_html( $p3 );
 $check( 'Section renders data escaped', false !== strpos( $html, 'Acme Corp' ) && false !== strpos( $html, 'Careful &lt;b&gt;now&lt;/b&gt;' ) && false === strpos( $html, '<b>now</b>' ) );
 
-add_filter( 'jeytech_gpsr_should_display', '__return_false' );
+add_filter( 'jeytech_sdbb_should_display', '__return_false' );
 $check( 'Display filter hides the tab (Pro contract)', $with_post( $p1, static function (): bool {
-	return ! isset( apply_filters( 'woocommerce_product_tabs', array() )['jeytech_gpsr'] );
+	return ! isset( apply_filters( 'woocommerce_product_tabs', array() )['jeytech_sdbb'] );
 } ) );
-remove_filter( 'jeytech_gpsr_should_display', '__return_false' );
+remove_filter( 'jeytech_sdbb_should_display', '__return_false' );
 
-add_filter( 'jeytech_gpsr_data', static function ( array $data ): array {
+add_filter( 'jeytech_sdbb_data', static function ( array $data ): array {
 	$data['manufacturer'] = 'Filtered Inc';
 	return $data;
 } );
 $check( 'Data filter overrides fields (Pro contract)', 'Filtered Inc' === Data::for_product( $p1 )['manufacturer'] );
-remove_all_filters( 'jeytech_gpsr_data' );
+remove_all_filters( 'jeytech_sdbb_data' );
 
 $rows = array();
 foreach ( AuditPage::rows()['rows'] as $row ) {
@@ -101,20 +101,20 @@ $check( 'Audit flags missing and complete products',
 	&& isset( $rows[ $p1 ] ) && array() === $rows[ $p1 ]['missing'] );
 
 wp_set_current_user( 1 );
-$_POST['jeytech_gpsr_manufacturer'] = 'Saved Corp';
+$_POST['jeytech_sdbb_manufacturer'] = 'Saved Corp';
 BrandFields::save( $brand );
-$check( 'Brand save handler stores sanitized fields', 'Saved Corp' === get_term_meta( $brand, 'jeytech_gpsr_manufacturer', true ) );
-update_term_meta( $brand, 'jeytech_gpsr_manufacturer', 'Acme Corp' );
+$check( 'Brand save handler stores sanitized fields', 'Saved Corp' === get_term_meta( $brand, 'jeytech_sdbb_manufacturer', true ) );
+update_term_meta( $brand, 'jeytech_sdbb_manufacturer', 'Acme Corp' );
 $_POST = array();
 
-$p5 = jeytech_gpsr_dev_simple( 'Saved Table' );
-$_POST = array( '_jeytech_gpsr_warnings' => 'Keep <i>dry</i>' );
+$p5 = jeytech_sdbb_dev_simple( 'Saved Table' );
+$_POST = array( '_jeytech_sdbb_warnings' => 'Keep <i>dry</i>' );
 ProductFields::save( $p5 );
-$check( 'Product save handler stores sanitized fields', 'Keep dry' === get_post_meta( $p5, '_jeytech_gpsr_warnings', true ) );
+$check( 'Product save handler stores sanitized fields', 'Keep dry' === get_post_meta( $p5, '_jeytech_sdbb_warnings', true ) );
 $_POST = array();
 
 $store  = \Automattic\WooCommerce\Utilities\OrderUtil::custom_orders_table_usage_is_enabled() ? 'hpos' : 'posts';
-$report = sprintf( "GPSR Guard — scénario (%s, PHP %s, WP %s, WC %s)\n", strtoupper( $store ), PHP_VERSION, get_bloginfo( 'version' ), WC_VERSION )
+$report = sprintf( "Safety Data by Brand — scénario (%s, PHP %s, WP %s, WC %s)\n", strtoupper( $store ), PHP_VERSION, get_bloginfo( 'version' ), WC_VERSION )
 	. implode( "\n", $lines ) . "\n"
 	. ( $failures ? "ÉCHEC : $failures vérification(s)" : 'OK : ' . count( $lines ) . ' vérifications' ) . "\n";
 

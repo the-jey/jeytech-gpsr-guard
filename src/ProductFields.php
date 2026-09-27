@@ -2,10 +2,10 @@
 /**
  * GPSR tab on the product edit screen: overrides and warnings.
  *
- * @package JeyTech\GpsrGuard
+ * @package JeyTech\SafetyDataByBrand
  */
 
-namespace JeyTech\GpsrGuard;
+namespace JeyTech\SafetyDataByBrand;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -27,9 +27,9 @@ final class ProductFields {
 	 * @param array $tabs Product data tabs.
 	 */
 	public static function tab( array $tabs ): array {
-		$tabs['jeytech_gpsr'] = array(
-			'label'    => __( 'GPSR', 'jeytech-gpsr-guard' ),
-			'target'   => 'jeytech_gpsr_data',
+		$tabs['jeytech_sdbb'] = array(
+			'label'    => __( 'GPSR', 'jeytech-safety-data-by-brand' ),
+			'target'   => 'jeytech_sdbb_data',
 			'class'    => array( 'show_if_simple', 'show_if_variable' ),
 			'priority' => 80,
 		);
@@ -43,8 +43,8 @@ final class ProductFields {
 		global $post;
 		$product_id = $post instanceof \WP_Post ? (int) $post->ID : 0;
 		?>
-		<div id="jeytech_gpsr_data" class="panel woocommerce_options_panel hidden">
-			<p class="form-field"><?php esc_html_e( 'Leave a field empty to use the brand value. Variations use their parent product.', 'jeytech-gpsr-guard' ); ?></p>
+		<div id="jeytech_sdbb_data" class="panel woocommerce_options_panel hidden">
+			<p class="form-field"><?php esc_html_e( 'Leave a field empty to use the brand value. Variations use their parent product.', 'jeytech-safety-data-by-brand' ); ?></p>
 			<?php
 			foreach ( Data::FIELDS as $field ) {
 				woocommerce_wp_text_input( array(
@@ -52,7 +52,7 @@ final class ProductFields {
 					'label'       => Data::labels()[ $field ],
 					'value'       => $product_id > 0 ? (string) get_post_meta( $product_id, Data::product_key( $field ), true ) : '',
 					'desc_tip'    => true,
-					'description' => __( 'Empty: inherit from the brand.', 'jeytech-gpsr-guard' ),
+					'description' => __( 'Empty: inherit from the brand.', 'jeytech-safety-data-by-brand' ),
 				) );
 			}
 			woocommerce_wp_textarea_input( array(

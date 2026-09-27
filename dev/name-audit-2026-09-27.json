@@ -1,0 +1,98 @@
+{
+  "checked_on": "2026-09-27",
+  "current_name": "JeyTech GPSR Guard for WooCommerce",
+  "current_slug": "jeytech-gpsr-guard",
+  "assessment": "Current full name differs, but its GPSR Guard core is already used. Recommend changing before submission.",
+  "conflicts": [
+    {
+      "name": "Rampedigitale GPSR Guard",
+      "url": "https://wordpress.org/plugins/rampedigitale-gpsr-guard/"
+    },
+    {
+      "name": "GPSR-Guard",
+      "url": "https://gpsr-software.de/gpsr-software"
+    }
+  ],
+  "recommended_name": "JeyTech Safety Data by Brand for WooCommerce",
+  "recommended_slug": "jeytech-safety-data-by-brand",
+  "alternative_name": "JeyTech GPSR Product Data for WooCommerce",
+  "checks": [
+    {
+      "query": "\"Safety Data by Brand\"",
+      "url": "https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request%5Bsearch%5D=%22Safety+Data+by+Brand%22&request%5Bper_page%5D=100",
+      "results": 0,
+      "matching_names": [],
+      "returned_names": []
+    },
+    {
+      "query": "JeyTech Safety Data by Brand",
+      "url": "https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request%5Bsearch%5D=JeyTech+Safety+Data+by+Brand&request%5Bper_page%5D=100",
+      "results": 0,
+      "matching_names": [],
+      "returned_names": []
+    },
+    {
+      "query": "GPSR Guard",
+      "url": "https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request%5Bsearch%5D=GPSR+Guard&request%5Bper_page%5D=100",
+      "results": 2,
+      "matching_names": [
+        {
+          "name": "Rampedigitale GPSR Guard",
+          "slug": "rampedigitale-gpsr-guard"
+        }
+      ],
+      "returned_names": [
+        {
+          "name": "Polski for WooCommerce",
+          "slug": "polski"
+        },
+        {
+          "name": "Rampedigitale GPSR Guard",
+          "slug": "rampedigitale-gpsr-guard"
+        }
+      ]
+    },
+    {
+      "query": "\"GPSR Product Data\"",
+      "url": "https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request%5Bsearch%5D=%22GPSR+Product+Data%22&request%5Bper_page%5D=100",
+      "results": 1,
+      "matching_names": [],
+      "returned_names": [
+        {
+          "name": "Polski for WooCommerce",
+          "slug": "polski"
+        }
+      ]
+    },
+    {
+      "query": "JeyTech GPSR Product Data",
+      "url": "https://api.wordpress.org/plugins/info/1.2/?action=query_plugins&request%5Bsearch%5D=JeyTech+GPSR+Product+Data&request%5Bper_page%5D=100",
+      "results": 0,
+      "matching_names": [],
+      "returned_names": []
+    }
+  ],
+  "limitations": "Public searches do not reveal pending or privately reserved names/slugs and do not guarantee WordPress.org approval.",
+  "recommended_slug_check": {
+    "url": "https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request%5Bslug%5D=jeytech-safety-data-by-brand",
+    "http_status": 404,
+    "response": {
+      "error": "Plugin not found."
+    }
+  },
+  "adopted_name": "JeyTech Safety Data by Brand for WooCommerce",
+  "adopted_slug": "jeytech-safety-data-by-brand",
+  "renamed_on": "2026-09-27",
+  "submission": {
+    "submitted_on": "2026-09-27",
+    "account": "jeytech",
+    "name": "JeyTech Safety Data by Brand for WooCommerce",
+    "assigned_slug": "jeytech-safety-data-by-brand",
+    "initial_slug": "jeytech-safety-data-by-brand-for-woocommerce",
+    "status": "Awaiting Review",
+    "zip_sha256": "27c25cf74b6857727d1dc899560caf0a0a64dea240357c4e19b0cbf20416397e",
+    "automated_scan": "Pass",
+    "initial_scan_warning": "textdomain_mismatch due to automatically assigned long slug; assigned slug corrected to match Text Domain",
+    "management_url": "https://wordpress.org/plugins/developers/add/"
+  }
+}

@@ -1,8 +1,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: JeyTech GPSR Guard for WooCommerce 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/jeytech-gpsr-guard\n"
+"Project-Id-Version: JeyTech Safety Data by Brand for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/jeytech-safety-data-by-brand\n"
 "POT-Creation-Date: 2026-09-26T00:00:00+00:00\n"
 "PO-Revision-Date: 2026-09-26 10:00+0200\n"
 "Last-Translator: JeyTech\n"
@@ -12,16 +12,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Domain: jeytech-gpsr-guard\n"
+"X-Domain: jeytech-safety-data-by-brand\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
-#: jeytech-gpsr-guard.php
-msgid "JeyTech GPSR Guard for WooCommerce"
-msgstr "JeyTech GPSR Guard for WooCommerce"
+#: jeytech-safety-data-by-brand.php
+msgid "JeyTech Safety Data by Brand for WooCommerce"
+msgstr "JeyTech Safety Data by Brand for WooCommerce"
 
 #. Description of the plugin
-#: jeytech-gpsr-guard.php
+#: jeytech-safety-data-by-brand.php
 msgid ""
 "Add GPSR manufacturer and safety information to every product — set it once "
 "per brand, audit what's missing."
@@ -30,7 +30,7 @@ msgstr ""
 "vos produits, renseignées une fois par marque."
 
 #. Author of the plugin
-#: jeytech-gpsr-guard.php
+#: jeytech-safety-data-by-brand.php
 msgid "JeyTech"
 msgstr "JeyTech"
 
@@ -81,8 +81,8 @@ msgstr "Oui"
 
 #: src/Admin/SettingsPage.php:41
 #: src/Admin/SettingsPage.php:74
-msgid "GPSR Guard"
-msgstr "GPSR Guard"
+msgid "Safety Data by Brand"
+msgstr "Safety Data by Brand"
 
 #: src/Admin/SettingsPage.php:42
 msgid "GPSR safety"
@@ -110,19 +110,19 @@ msgstr "Ouvrir l’audit : produits sans données GPSR"
 
 #: src/Admin/SettingsPage.php:85
 msgid ""
-"GPSR Guard displays what you enter. It is not legal advice and does not "
+"Safety Data by Brand displays what you enter. It is not legal advice and does not "
 "guarantee compliance."
 msgstr ""
-"GPSR Guard affiche ce que vous saisissez. Ce n’est pas un avis juridique et "
+"Safety Data by Brand affiche ce que vous saisissez. Ce n’est pas un avis juridique et "
 "ne garantit aucune conformité."
 
 #. translators: %s: minimum WooCommerce version.
 #: src/Core/Requirements.php:38
 #, php-format
 msgid ""
-"JeyTech GPSR Guard for WooCommerce needs WooCommerce %s or later to run."
+"JeyTech Safety Data by Brand for WooCommerce needs WooCommerce %s or later to run."
 msgstr ""
-"JeyTech GPSR Guard for WooCommerce nécessite WooCommerce %s ou ultérieur "
+"JeyTech Safety Data by Brand for WooCommerce nécessite WooCommerce %s ou ultérieur "
 "pour fonctionner."
 
 #: src/Data.php:39
