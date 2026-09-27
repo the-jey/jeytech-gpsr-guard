@@ -90,9 +90,16 @@
     "assigned_slug": "jeytech-safety-data-by-brand",
     "initial_slug": "jeytech-safety-data-by-brand-for-woocommerce",
     "status": "Awaiting Review",
-    "zip_sha256": "27c25cf74b6857727d1dc899560caf0a0a64dea240357c4e19b0cbf20416397e",
-    "automated_scan": "Pass",
+    "zip_sha256": "9f76737c6034e4be7134843c38be74ac5e7e0513ac008110148445b4ad1c8d9d",
     "initial_scan_warning": "textdomain_mismatch due to automatically assigned long slug; assigned slug corrected to match Text Domain",
-    "management_url": "https://wordpress.org/plugins/developers/add/"
+    "management_url": "https://wordpress.org/plugins/developers/add/",
+    "initial_zip_sha256": "27c25cf74b6857727d1dc899560caf0a0a64dea240357c4e19b0cbf20416397e",
+    "initial_automated_scan": "Pass",
+    "ui_update": {
+      "uploaded_on": "2026-09-27",
+      "confirmed_response": "New version of JeyTech Safety Data by Brand for WooCommerce uploaded for review.",
+      "status": "Awaiting Review",
+      "description": "Brand manufacturer panel styled with the same scoped JeyTech dark/lime palette as settings and audit; brand save roundtrips and mobile layout checked in EN/FR."
+    }
   }
 }

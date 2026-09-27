@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-27",
+  "palette": {
+    "background": "#0e0f11",
+    "accent": "#c6f24e"
+  },
+  "browser_checks": [
+    {
+      "port": 9402,
+      "palette": true,
+      "add_fields": 4,
+      "save_roundtrip": true,
+      "focus_lime": true,
+      "mobile_overflow": false,
+      "unrelated_taxonomy_css": false
+    },
+    {
+      "port": 9403,
+      "palette": true,
+      "add_fields": 4,
+      "save_roundtrip": true,
+      "focus_lime": true,
+      "mobile_overflow": false,
+      "unrelated_taxonomy_css": false
+    }
+  ],
+  "hpos_checks": 18,
+  "legacy_checks": 18,
+  "plugin_check_errors": 0,
+  "plugin_check_warnings": 0,
+  "plugin_check_scope": "static only",
+  "current_zip_sha256": "9f76737c6034e4be7134843c38be74ac5e7e0513ac008110148445b4ad1c8d9d"
+}
