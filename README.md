@@ -40,6 +40,10 @@ Points d’extension prévus pour le Pro : filtres `jeytech_sdbb_data` (données
 
 ## Publication WordPress.org
 
+Le build bloque tout dossier `languages/` ou catalogue `.po`, `.pot`, `.mo`, `.l10n.php` dans les fichiers distribuables, même hors du dossier exclu et quelle que soit la casse. Un refus arrête le build avant la création du ZIP et supprime l’archive du build précédent. Les traductions locales restent dans Git ; les versions WordPress.org utilisent les packs de langue. Reprendre ce contrôle dès la création de chaque nouveau gratuit. Vérification des builds propres et contaminés : `python3 ../tools/wporg-release/verify-language-packaging.py --plugin jeytech-safety-data-by-brand`.
+
+Contrôle du 28/09/2026 : 15 scénarios réussis, fichiers distribuables identiques à la version existante et ZIP de référence conservé. [Preuves](dev/free-language-packaging-2026-09-28.json).
+
 Contrôle du 27/09/2026 : l’ancien nom « JeyTech GPSR Guard for WooCommerce » reprend « GPSR Guard », déjà utilisé par [Rampedigitale GPSR Guard](https://wordpress.org/plugins/rampedigitale-gpsr-guard/) et par le logiciel [GPSR-Guard](https://gpsr-software.de/gpsr-software). Le préfixe JeyTech ne suffit pas à rendre cette base originale : nom abandonné avant soumission.
 
 Nom adopté : **JeyTech Safety Data by Brand for WooCommerce**, slug `jeytech-safety-data-by-brand`. Les recherches publiques du nom et de « Safety Data by Brand » ne trouvent aucune extension ; l’API du slug renvoie « Plugin not found ». Le slug court a ensuite été attribué dans le dossier de soumission WordPress.org. Approbation obtenue le 28/09/2026 ; version 1.0.0 publiée et vérifiée sur WordPress.org.

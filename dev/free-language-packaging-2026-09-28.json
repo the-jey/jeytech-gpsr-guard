@@ -1,0 +1,82 @@
+{
+  "verifiedAt": "2026-09-28T12:05:23.537027+00:00",
+  "plugin": "jeytech-safety-data-by-brand",
+  "scope": "WordPress.org Free ZIP builder; no runtime change",
+  "builderSha256": "a3ac2317b79b6d5d71916fab6b5f7743479941d803dd2f60dbef66c6d10da53e",
+  "cleanBuildScenarios": 2,
+  "rejectedBuildScenarios": 13,
+  "scenarioCount": 15,
+  "allScenariosPassed": true,
+  "scenarios": [
+    {
+      "name": "clean",
+      "passed": true
+    },
+    {
+      "name": "local-catalogs-excluded",
+      "passed": true
+    },
+    {
+      "name": "catalog-po",
+      "passed": true
+    },
+    {
+      "name": "catalog-pot",
+      "passed": true
+    },
+    {
+      "name": "catalog-mo",
+      "passed": true
+    },
+    {
+      "name": "catalog-l10n.php",
+      "passed": true
+    },
+    {
+      "name": "catalog-PO",
+      "passed": true
+    },
+    {
+      "name": "catalog-POT",
+      "passed": true
+    },
+    {
+      "name": "catalog-MO",
+      "passed": true
+    },
+    {
+      "name": "catalog-L10N.PHP",
+      "passed": true
+    },
+    {
+      "name": "empty-language-directory",
+      "passed": true
+    },
+    {
+      "name": "nested-language-directory",
+      "passed": true
+    },
+    {
+      "name": "mixed-case-language-directory",
+      "passed": true
+    },
+    {
+      "name": "catalog-symlink",
+      "passed": true
+    },
+    {
+      "name": "stale-archive",
+      "passed": true
+    }
+  ],
+  "cleanArchiveFilesIdenticalToExistingRelease": true,
+  "fileCount": 15,
+  "existingReleaseArchivePreserved": true,
+  "existingReleaseArchiveSha256": "9f76737c6034e4be7134843c38be74ac5e7e0513ac008110148445b4ad1c8d9d",
+  "textDomainMatchesSlug": true,
+  "manualTranslationLoadingOrCustomPathAbsent": true,
+  "sourcesRetainedInGit": true,
+  "privateProCatalogsOutsideGuardScope": true,
+  "existingSourceCommit": "a3246d48118d1c7eeaeec15c0b4eadf5d4d242fd",
+  "reproduceFromParent": "python3 tools/wporg-release/verify-language-packaging.py --plugin jeytech-safety-data-by-brand"
+}
