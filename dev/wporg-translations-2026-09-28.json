@@ -1,0 +1,27 @@
+{
+  "verifiedAt": "2026-09-28T07:41:46.989842+00:00",
+  "slug": "jeytech-safety-data-by-brand",
+  "locale": "fr",
+  "status": "Waiting",
+  "projects": [
+    {
+      "branch": "stable",
+      "entries": 31,
+      "remoteExportMatchesLocal": true,
+      "localFile": "languages/jeytech-safety-data-by-brand-fr_FR.po",
+      "localSha256": "0c4684c63acf9cbcd5e4a25ed716a14d07eee33afa4d2f21aac5fb3a20ab5417",
+      "projectUrl": "https://translate.wordpress.org/projects/wp-plugins/jeytech-safety-data-by-brand/stable/fr/default/",
+      "approvalStatus": "Waiting"
+    },
+    {
+      "branch": "stable-readme",
+      "entries": 29,
+      "remoteExportMatchesLocal": true,
+      "localFile": "dev/translations/stable-readme-fr_FR.po",
+      "localSha256": "bcaa5ad7e779d0623fdb9f17402f47acf3090bbcc9e2c466d5c6f976489f30ee",
+      "projectUrl": "https://translate.wordpress.org/projects/wp-plugins/jeytech-safety-data-by-brand/stable-readme/fr/default/",
+      "approvalStatus": "Waiting"
+    }
+  ],
+  "totalEntries": 60
+}

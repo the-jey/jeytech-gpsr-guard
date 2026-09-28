@@ -1,0 +1,138 @@
+{
+  "slug": "jeytech-safety-data-by-brand",
+  "version": "1.0.0",
+  "status": "published_and_verified",
+  "approved_on": "2026-09-28",
+  "verified_at_utc": "2026-09-28T06:56:48.324055+00:00",
+  "verified_at_paris": "2026-09-28T08:56:48.324055+02:00",
+  "source_git_commit": "d71cf210d45983565b4608722d81b73dfa847526",
+  "approved_zip_sha256": "9f76737c6034e4be7134843c38be74ac5e7e0513ac008110148445b4ad1c8d9d",
+  "svn": {
+    "url": "https://plugins.svn.wordpress.org/jeytech-safety-data-by-brand",
+    "revision": 3716420,
+    "tag": "1.0.0",
+    "working_copy_clean": true,
+    "remote_trunk_and_tag_match_approved_zip": true,
+    "remote_assets_match_originals": true
+  },
+  "public": {
+    "page_url": "https://wordpress.org/plugins/jeytech-safety-data-by-brand/",
+    "page_http_status": 200,
+    "version": "1.0.0",
+    "download_url": "https://downloads.wordpress.org/plugin/jeytech-safety-data-by-brand.1.0.0.zip",
+    "zip_sha256": "ce70d2ab8204a6b80eb44615fd04ea41f718112091628ed5441e972fc7991f33",
+    "zip_file_count": 15,
+    "zip_files_identical_to_approved_release": true,
+    "screenshot_count": 3,
+    "icons": {
+      "1x": "https://ps.w.org/jeytech-safety-data-by-brand/assets/icon-128x128.png?rev=3716420",
+      "2x": "https://ps.w.org/jeytech-safety-data-by-brand/assets/icon-256x256.png?rev=3716420"
+    },
+    "banners": {
+      "low": "https://ps.w.org/jeytech-safety-data-by-brand/assets/banner-772x250.jpg?rev=3716420",
+      "high": "https://ps.w.org/jeytech-safety-data-by-brand/assets/banner-1544x500.jpg?rev=3716420"
+    },
+    "assets": [
+      {
+        "name": "banner-1544x500.jpg",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/banner-1544x500.jpg?rev=3716420",
+        "status": 200,
+        "bytes": 137200,
+        "identical_to_source": true,
+        "sha256": "de2d843ef47e206d9bd89811b9462705a21db7bff7c364602362b241bbbbdda4"
+      },
+      {
+        "name": "banner-772x250.jpg",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/banner-772x250.jpg?rev=3716420",
+        "status": 200,
+        "bytes": 51188,
+        "identical_to_source": true,
+        "sha256": "9efcd55d19804fbdbe5cac6040e3dc0b0126c018959dab5688d46d13d8e78c86"
+      },
+      {
+        "name": "icon-128x128.png",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/icon-128x128.png?rev=3716420",
+        "status": 200,
+        "bytes": 11130,
+        "identical_to_source": true,
+        "sha256": "582fde3717a1338654f3b73bc47c828f2556f1fb8154bd9e477f7cc636b540f6"
+      },
+      {
+        "name": "icon-256x256.png",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/icon-256x256.png?rev=3716420",
+        "status": 200,
+        "bytes": 37942,
+        "identical_to_source": true,
+        "sha256": "2217f5debd4b44fd913af21ca5e703bfdd7eab70ff2b6b26c0b19680d825e6f4"
+      },
+      {
+        "name": "screenshot-1-fr.png",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/screenshot-1-fr.png?rev=3716420",
+        "status": 200,
+        "bytes": 60441,
+        "identical_to_source": true,
+        "sha256": "5c1c14e75f94bc86122d78b2a318b9d5e10759b3942eed2669f4fcae49956f04"
+      },
+      {
+        "name": "screenshot-1.png",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/screenshot-1.png?rev=3716420",
+        "status": 200,
+        "bytes": 58218,
+        "identical_to_source": true,
+        "sha256": "3260bf999fcf209efcb2ed85657c3ddbe086a969a7c0d69f1be0706a3d90f7fa"
+      },
+      {
+        "name": "screenshot-2-fr.png",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/screenshot-2-fr.png?rev=3716420",
+        "status": 200,
+        "bytes": 54064,
+        "identical_to_source": true,
+        "sha256": "337d945cb4f0a42dba3b71f6d41ee27553f568a8a5d178dcf9cbeae25a9c69c8"
+      },
+      {
+        "name": "screenshot-2.png",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/screenshot-2.png?rev=3716420",
+        "status": 200,
+        "bytes": 54120,
+        "identical_to_source": true,
+        "sha256": "e6ad10a84bd68643786abafa8f94f7632cae117739e7d30b8014523c3843b206"
+      },
+      {
+        "name": "screenshot-3-fr.png",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/screenshot-3-fr.png?rev=3716420",
+        "status": 200,
+        "bytes": 54705,
+        "identical_to_source": true,
+        "sha256": "f52984f4db2a52e966a30cec69b700dfab556ad1c21020947d9e9979cc7b59ab"
+      },
+      {
+        "name": "screenshot-3.png",
+        "url": "https://ps.w.org/jeytech-safety-data-by-brand/assets/screenshot-3.png?rev=3716420",
+        "status": 200,
+        "bytes": 53649,
+        "identical_to_source": true,
+        "sha256": "0fa87bae3f674bb27b4c63fd5e2cc64a9ee2448039cc11100333b76974d5ad48"
+      }
+    ]
+  },
+  "tests": {
+    "environment": "WordPress Playground (SQLite)",
+    "public_zip_installed_on_fresh_sites": true,
+    "hpos_php83": {
+      "passed": 18,
+      "report": "Safety Data by Brand — scénario (HPOS, PHP 8.3.33, WP 7.1.2, WC 11.1.2)\nPASS  Brands taxonomy registered by WooCommerce\nPASS  Brand meta roundtrip\nPASS  Brand screens hooked\nPASS  Product inherits brand data\nPASS  Product override wins over brand\nPASS  Warnings live on the product\nPASS  Missing fields listed without brand\nPASS  Complete product has no missing field\nPASS  Email sanitized, text capped\nPASS  Tab present with data\nPASS  Tab absent without data\nPASS  Disabled hides the tab\nPASS  Section renders data escaped\nPASS  Display filter hides the tab (Pro contract)\nPASS  Data filter overrides fields (Pro contract)\nPASS  Audit flags missing and complete products\nPASS  Brand save handler stores sanitized fields\nPASS  Product save handler stores sanitized fields\nOK : 18 vérifications\n"
+    },
+    "classic_php74": {
+      "passed": 18,
+      "report": "Safety Data by Brand — scénario (POSTS, PHP 7.4.33, WP 7.1.2, WC 11.1.2)\nPASS  Brands taxonomy registered by WooCommerce\nPASS  Brand meta roundtrip\nPASS  Brand screens hooked\nPASS  Product inherits brand data\nPASS  Product override wins over brand\nPASS  Warnings live on the product\nPASS  Missing fields listed without brand\nPASS  Complete product has no missing field\nPASS  Email sanitized, text capped\nPASS  Tab present with data\nPASS  Tab absent without data\nPASS  Disabled hides the tab\nPASS  Section renders data escaped\nPASS  Display filter hides the tab (Pro contract)\nPASS  Data filter overrides fields (Pro contract)\nPASS  Audit flags missing and complete products\nPASS  Brand save handler stores sanitized fields\nPASS  Product save handler stores sanitized fields\nOK : 18 vérifications\n"
+    },
+    "existing_plugin_check": {
+      "errors": 0,
+      "warnings": 0,
+      "type": "static",
+      "report": "Plugin Check — 0 erreur(s), 0 avertissement(s)\nVérifications statiques lancées : i18n_usage, php_error_reporting, code_obfuscation, plugin_content, file_type, plugin_header_fields, late_escaping, safe_redirect, plugin_updater, plugin_uninstall, plugin_review_phpcs, direct_db_queries, performant_wp_query_params, enqueued_scripts_in_footer, enqueued_resources, plugin_readme, localhost, no_unfiltered_uploads, trademarks, offloading_files, write_file, setting_sanitization, prefixing, direct_db, minified_files, direct_file_access, external_admin_menu_links, wp_functions_compatibility, ai_provider\n",
+      "release_file_contents_unchanged": true
+    }
+  },
+  "credential_location_recorded_in": "../AGENTS.md (variable names and path only; no secret values)"
+}
