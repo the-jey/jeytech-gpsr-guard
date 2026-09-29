@@ -1,0 +1,144 @@
+{
+  "verifiedAt": "2026-09-29T12:32:28.984612+00:00",
+  "plugin": "jeytech-safety-data-by-brand",
+  "catalogs": [
+    {
+      "file": "dev/translations/stable-readme-fr_FR.po",
+      "entries": 29,
+      "changes": [
+        {
+          "source": "Add GPSR manufacturer and safety information to every product — set it once per brand, audit what&#039;s missing.",
+          "before": "Ajoutez les données fabricant et de sécurité GPSR à chaque produit : une saisie par marque et un audit des données manquantes.",
+          "after": "Ajoutez les données fabricant et de sécurité GPSR à chaque produit : une saisie par marque et un audit des données manquantes."
+        },
+        {
+          "source": "Yes. Classic themes show a \"Product Safety\" product tab; block themes get the same section appended to the product content, since the Single Product block renders no classic tabs.",
+          "before": "Oui. Les thèmes classiques affichent un onglet « Sécurité du produit ». Les thèmes à blocs affichent la même section à la suite du contenu du produit, car le bloc Produit unique ne génère pas les onglets classiques.",
+          "after": "Oui. Les thèmes classiques affichent un onglet « Sécurité du produit ». Les thèmes à blocs affichent la même section à la suite du contenu du produit, car le bloc Produit unique ne génère pas les onglets classiques."
+        },
+        {
+          "source": "Once per brand under Products → Brands. Products inherit their brand's data; leave a product field empty to inherit it, or fill it to override.",
+          "before": "Une fois par marque dans Produits → Marques. Les produits héritent des données de leur marque : laissez un champ du produit vide pour conserver cet héritage, ou renseignez-le pour remplacer la valeur de la marque.",
+          "after": "Une fois par marque dans Produits → Marques. Les produits héritent des données de leur marque : laissez un champ du produit vide pour conserver cet héritage, ou renseignez-le pour remplacer la valeur de la marque."
+        },
+        {
+          "source": "No tool can. The plugin displays the data you enter in the right place; you remain responsible for its accuracy. When in doubt, ask a professional.",
+          "before": "Aucun outil ne peut le garantir. Le plugin affiche les données que vous saisissez à l’endroit prévu ; vous restez responsable de leur exactitude. En cas de doute, consultez un professionnel.",
+          "after": "Aucun outil ne peut le garantir. Le extension affiche les données que vous saisissez à l’endroit prévu ; vous restez responsable de leur exactitude. En cas de doute, consultez un professionnel."
+        },
+        {
+          "source": "What if a product has no brand?",
+          "before": "Que faire si un produit n’a pas de marque ?",
+          "after": "Que faire si un produit n’a pas de marque ?"
+        },
+        {
+          "source": "Does it work with block themes?",
+          "before": "Le plugin fonctionne-t-il avec les thèmes à blocs ?",
+          "after": "Le extension fonctionne-t-il avec les thèmes à blocs ?"
+        },
+        {
+          "source": "What about variable products?",
+          "before": "Comment sont gérés les produits variables ?",
+          "after": "Comment sont gérés les produits variables ?"
+        },
+        {
+          "source": "Where do I enter the manufacturer data?",
+          "before": "Où saisir les données du fabricant ?",
+          "after": "Où saisir les données du fabricant ?"
+        },
+        {
+          "source": "Does it make my shop compliant?",
+          "before": "Le plugin garantit-il la conformité de ma boutique ?",
+          "after": "Le extension garantit-il la conformité de ma boutique ?"
+        },
+        {
+          "source": "Install and activate the plugin (WooCommerce 9.6 or later must be active).",
+          "before": "Installez et activez le plugin. WooCommerce 9.6 ou ultérieur doit être actif.",
+          "after": "Installez et activez le extension. WooCommerce 9.6 ou ultérieur doit être actif."
+        },
+        {
+          "source": "Safety Data by Brand adds them where they belong:",
+          "before": "Safety Data by Brand ajoute ces informations aux endroits prévus :",
+          "after": "Safety Data by Brand ajoute ces informations aux endroits prévus :"
+        },
+        {
+          "source": "<strong>\"Product Safety\" section on the page</strong> — a product tab on classic themes, an appended section on block themes. Nothing shows when a product has no data.",
+          "before": "<strong>Section « Sécurité du produit » sur la fiche</strong> : un onglet sur les thèmes classiques et une section ajoutée au contenu sur les thèmes à blocs. Aucun bloc n’apparaît lorsque le produit ne contient aucune donnée.",
+          "after": "<strong>Section « Sécurité du produit » sur la fiche</strong> : un onglet sur les thèmes classiques et une section ajoutée au contenu sur les thèmes à blocs. Aucun bloc n’apparaît lorsque le produit ne contient aucune donnée."
+        },
+        {
+          "source": "First release: brand-level manufacturer data with per-product overrides, safety warnings, product page section for classic and block themes, audit list.",
+          "before": "Première version : données fabricant par marque et remplacement par produit, avertissements de sécurité, section dédiée sur les thèmes classiques et à blocs, liste d’audit.",
+          "after": "Première version : données fabricant par marque et remplacement par produit, avertissements de sécurité, section dédiée sur les thèmes classiques et à blocs, liste d’audit."
+        },
+        {
+          "source": "<strong>Audit list</strong> — the admin screen lists the products still missing GPSR data.",
+          "before": "<strong>Liste d’audit</strong> : un écran d’administration liste les produits dont les données GPSR sont encore incomplètes.",
+          "after": "<strong>Liste d’audit</strong> : un écran d’administration liste les produits dont les données GPSR sont encore incomplètes."
+        },
+        {
+          "source": "<strong>\"Product Safety\" section on the page</strong> — a product tab on classic themes, an appended section on block themes. Nothing shows when a product has no data.",
+          "before": "<strong>Section « Sécurité du produit » sur la fiche</strong> : un onglet sur les thèmes classiques et une section ajoutée au contenu sur les thèmes à blocs. Aucun bloc n’apparaît lorsque le produit ne contient aucune donnée.",
+          "after": "<strong>Section « Sécurité du produit » sur la fiche</strong> : un onglet sur les thèmes classiques et une section ajoutée au contenu sur les thèmes à blocs. Aucun bloc n’apparaît lorsque le produit ne contient aucune donnée."
+        },
+        {
+          "source": "<strong>Safety warnings per product</strong> — care instructions shown with the manufacturer block.",
+          "before": "<strong>Avertissements de sécurité par produit</strong> : les consignes d’utilisation sont affichées avec les coordonnées du fabricant.",
+          "after": "<strong>Avertissements de sécurité par produit</strong> : les consignes d’utilisation sont affichées avec les coordonnées du fabricant."
+        },
+        {
+          "source": "<strong>Override per product</strong> — any field can be replaced on a single product. Variations use their parent's data.",
+          "before": "<strong>Remplacement par produit</strong> : chaque champ peut être renseigné différemment pour un produit. Les variations utilisent les données de leur produit parent.",
+          "after": "<strong>Remplacement par produit</strong> : chaque champ peut être renseigné différemment pour un produit. Les variations utilisent les données de leur produit parent."
+        },
+        {
+          "source": "<strong>Set once per brand</strong> — manufacturer, address, email and EU responsible person live on the brand (WooCommerce core taxonomy). Every product of the brand inherits them.",
+          "before": "<strong>Une saisie par marque</strong> : le fabricant, son adresse, son e-mail et la personne responsable UE sont enregistrés sur la marque native de WooCommerce. Tous les produits de cette marque en héritent.",
+          "after": "<strong>Une saisie par marque</strong> : le fabricant, son adresse, son e-mail et la personne responsable UE sont enregistrés sur la marque native de WooCommerce. Tous les produits de cette marque en héritent."
+        }
+      ],
+      "untranslated": 0,
+      "fuzzy": 0,
+      "placeholdersAndHtml": "passed",
+      "uniqueOriginals": 29,
+      "obsolete": 0
+    },
+    {
+      "file": "languages/jeytech-safety-data-by-brand-fr_FR.po",
+      "entries": 31,
+      "changes": [
+        {
+          "source": "Large catalog: only the first 1,000 products are listed.",
+          "before": "Grand catalogue : seuls les 1 000 premiers produits sont listés.",
+          "after": "Grand catalogue : seuls les 1 000 premiers produits sont listés."
+        },
+        {
+          "source": "Nothing to show: every listed product has its GPSR data.",
+          "before": "Rien à afficher : tous les produits listés ont leurs données GPSR.",
+          "after": "Rien à afficher : tous les produits listés ont leurs données GPSR."
+        },
+        {
+          "source": "Set the manufacturer data once per brand: every product inherits it. Overrides and safety warnings live on the product.",
+          "before": "Renseignez les données fabricant une fois par marque : tous les produits en héritent. Les surcharges et les avertissements se saisissent sur le produit.",
+          "after": "Renseignez les données fabricant une fois par marque : tous les produits en héritent. Les surcharges et les avertissements se saisissent sur le produit."
+        },
+        {
+          "source": "Open the audit: products missing GPSR data",
+          "before": "Ouvrir l’audit : produits sans données GPSR",
+          "after": "Ouvrir l’audit : produits sans données GPSR"
+        },
+        {
+          "source": "Empty: inherit from the brand.",
+          "before": "Vide : hérite de la marque.",
+          "after": "Vide : hérite de la marque."
+        }
+      ],
+      "untranslated": 0,
+      "fuzzy": 0,
+      "placeholdersAndHtml": "passed",
+      "uniqueOriginals": 31,
+      "obsolete": 0
+    }
+  ],
+  "newVersion": null
+}

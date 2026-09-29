@@ -1,0 +1,213 @@
+{
+  "verifiedAt": "2026-09-29T13:18:59.255361+00:00",
+  "plugin": "jeytech-safety-data-by-brand",
+  "projects": [
+    {
+      "slug": "jeytech-safety-data-by-brand",
+      "branch": "stable",
+      "url": "https://translate.wordpress.org/projects/wp-plugins/jeytech-safety-data-by-brand/stable/fr/default/",
+      "stats": {
+        "All": 31,
+        "Translated": 0,
+        "Untranslated": 0,
+        "Waiting": 31,
+        "Changes requested": 0,
+        "Fuzzy": 0,
+        "Warnings": 0
+      },
+      "exportBytes": 4577
+    },
+    {
+      "slug": "jeytech-safety-data-by-brand",
+      "branch": "stable-readme",
+      "url": "https://translate.wordpress.org/projects/wp-plugins/jeytech-safety-data-by-brand/stable-readme/fr/default/",
+      "stats": {
+        "All": 29,
+        "Translated": 0,
+        "Untranslated": 0,
+        "Waiting": 29,
+        "Changes requested": 0,
+        "Fuzzy": 0,
+        "Warnings": 0
+      },
+      "exportBytes": 8798
+    }
+  ],
+  "remoteExports": [
+    {
+      "plugin": "jeytech-safety-data-by-brand",
+      "branch": "stable",
+      "entries": 31,
+      "matchesReviewedLocalTranslations": true
+    },
+    {
+      "plugin": "jeytech-safety-data-by-brand",
+      "branch": "stable-readme",
+      "entries": 29,
+      "matchesReviewedLocalTranslations": true
+    }
+  ],
+  "pteRequest": {
+    "submittedAt": "2026-09-29T12:47:56.198Z",
+    "account": "jeytech",
+    "postId": 72397,
+    "requestType": "Editor Request",
+    "status": "pending moderation",
+    "pteGranted": false,
+    "languagePacksAvailable": false,
+    "submittedText": "pte-request-fr_FR-2026-09-29.md"
+  },
+  "productionRuntimeUnchanged": true,
+  "freeZipWithoutCatalogs": true,
+  "packagingVerification": {
+    "slug": "jeytech-safety-data-by-brand",
+    "builderSha256": "a3ac2317b79b6d5d71916fab6b5f7743479941d803dd2f60dbef66c6d10da53e",
+    "scenarioCount": 15,
+    "allowedScenarios": 2,
+    "rejectedScenarios": 13,
+    "cleanArchive": {
+      "sha256": "88cf47c55c5238925fad1c34df1e675b6e24d7f142064d7d4289e45614603e0a",
+      "files": {
+        "jeytech-safety-data-by-brand/src/Data.php": "9fb870a8ec4f630785fe534c0aaed029ad9107417ab7fdde9d1c1961e0fb7dc6",
+        "jeytech-safety-data-by-brand/src/Settings.php": "8324e5638d8620a0f28464726f571a79406172b592bcfb28e61d7f48dbc88fc7",
+        "jeytech-safety-data-by-brand/src/BrandFields.php": "ac27f66252473aa867d74ad09175b6f62bcab9e3d0934d9748c5c5299f8837ed",
+        "jeytech-safety-data-by-brand/src/Frontend/Safety.php": "6b0ac4e187e2f026dba2ed3847d236b0a34eaaca8e5c203c983bf2ffb9e5a62b",
+        "jeytech-safety-data-by-brand/src/ProductFields.php": "d62da59f0be6f9644f179c97f80fdeaeb6929e2e36bd8a0d7334d56541de0ebe",
+        "jeytech-safety-data-by-brand/src/Plugin.php": "6eb5df935a79f39b39fa54988dbe54ae8e12689376768a71a02a2d55c0ed76ff",
+        "jeytech-safety-data-by-brand/src/Admin/AuditPage.php": "787822a5f955f736670c0c3b2f03c5e77d7e0016ce55c8533b650d11fa566684",
+        "jeytech-safety-data-by-brand/src/Admin/SettingsPage.php": "34215fea9522a79f59937e8012e0cf66c59ac523bccdbfaed01b758da03ac7f0",
+        "jeytech-safety-data-by-brand/src/Core/Compat.php": "b70a2f620bf28d257756477da496accf752a7c7b5904869ebfaa8a81fc8ffd32",
+        "jeytech-safety-data-by-brand/src/Core/Requirements.php": "a7a522586ce4a384dfe2f000b167cce54a258fe9f18e2a43ad062aa5ced5fe15",
+        "jeytech-safety-data-by-brand/src/Core/Autoloader.php": "6a576db370411a2b7bf04991ad9c5f529251bba558ecb1ccd17ae4bbd9a2cfa8",
+        "jeytech-safety-data-by-brand/jeytech-safety-data-by-brand.php": "e0c7d34aed4e6d247eac14a248a75b584bf97359e0f985685999f6f90c3051b3",
+        "jeytech-safety-data-by-brand/uninstall.php": "4702782ae1867373f1c6d930dbd934df0cbd985543d9c1bcbad5a90fc927bb63",
+        "jeytech-safety-data-by-brand/assets/admin.css": "5e010bd34e4fa2d3edeb9fa7384b47ebb819073458b50a94132d1eda576509c5",
+        "jeytech-safety-data-by-brand/readme.txt": "91c8260edacea0591802be260880b4f5f61158a50587518617561cf5c98c8d0d"
+      }
+    },
+    "scenarios": [
+      {
+        "name": "clean",
+        "passed": true,
+        "sha256": "88cf47c55c5238925fad1c34df1e675b6e24d7f142064d7d4289e45614603e0a",
+        "files": {
+          "jeytech-safety-data-by-brand/src/Data.php": "9fb870a8ec4f630785fe534c0aaed029ad9107417ab7fdde9d1c1961e0fb7dc6",
+          "jeytech-safety-data-by-brand/src/Settings.php": "8324e5638d8620a0f28464726f571a79406172b592bcfb28e61d7f48dbc88fc7",
+          "jeytech-safety-data-by-brand/src/BrandFields.php": "ac27f66252473aa867d74ad09175b6f62bcab9e3d0934d9748c5c5299f8837ed",
+          "jeytech-safety-data-by-brand/src/Frontend/Safety.php": "6b0ac4e187e2f026dba2ed3847d236b0a34eaaca8e5c203c983bf2ffb9e5a62b",
+          "jeytech-safety-data-by-brand/src/ProductFields.php": "d62da59f0be6f9644f179c97f80fdeaeb6929e2e36bd8a0d7334d56541de0ebe",
+          "jeytech-safety-data-by-brand/src/Plugin.php": "6eb5df935a79f39b39fa54988dbe54ae8e12689376768a71a02a2d55c0ed76ff",
+          "jeytech-safety-data-by-brand/src/Admin/AuditPage.php": "787822a5f955f736670c0c3b2f03c5e77d7e0016ce55c8533b650d11fa566684",
+          "jeytech-safety-data-by-brand/src/Admin/SettingsPage.php": "34215fea9522a79f59937e8012e0cf66c59ac523bccdbfaed01b758da03ac7f0",
+          "jeytech-safety-data-by-brand/src/Core/Compat.php": "b70a2f620bf28d257756477da496accf752a7c7b5904869ebfaa8a81fc8ffd32",
+          "jeytech-safety-data-by-brand/src/Core/Requirements.php": "a7a522586ce4a384dfe2f000b167cce54a258fe9f18e2a43ad062aa5ced5fe15",
+          "jeytech-safety-data-by-brand/src/Core/Autoloader.php": "6a576db370411a2b7bf04991ad9c5f529251bba558ecb1ccd17ae4bbd9a2cfa8",
+          "jeytech-safety-data-by-brand/jeytech-safety-data-by-brand.php": "e0c7d34aed4e6d247eac14a248a75b584bf97359e0f985685999f6f90c3051b3",
+          "jeytech-safety-data-by-brand/uninstall.php": "4702782ae1867373f1c6d930dbd934df0cbd985543d9c1bcbad5a90fc927bb63",
+          "jeytech-safety-data-by-brand/assets/admin.css": "5e010bd34e4fa2d3edeb9fa7384b47ebb819073458b50a94132d1eda576509c5",
+          "jeytech-safety-data-by-brand/readme.txt": "91c8260edacea0591802be260880b4f5f61158a50587518617561cf5c98c8d0d"
+        }
+      },
+      {
+        "name": "local-catalogs-excluded",
+        "passed": true,
+        "sha256": "88cf47c55c5238925fad1c34df1e675b6e24d7f142064d7d4289e45614603e0a",
+        "files": {
+          "jeytech-safety-data-by-brand/src/Data.php": "9fb870a8ec4f630785fe534c0aaed029ad9107417ab7fdde9d1c1961e0fb7dc6",
+          "jeytech-safety-data-by-brand/src/Settings.php": "8324e5638d8620a0f28464726f571a79406172b592bcfb28e61d7f48dbc88fc7",
+          "jeytech-safety-data-by-brand/src/BrandFields.php": "ac27f66252473aa867d74ad09175b6f62bcab9e3d0934d9748c5c5299f8837ed",
+          "jeytech-safety-data-by-brand/src/Frontend/Safety.php": "6b0ac4e187e2f026dba2ed3847d236b0a34eaaca8e5c203c983bf2ffb9e5a62b",
+          "jeytech-safety-data-by-brand/src/ProductFields.php": "d62da59f0be6f9644f179c97f80fdeaeb6929e2e36bd8a0d7334d56541de0ebe",
+          "jeytech-safety-data-by-brand/src/Plugin.php": "6eb5df935a79f39b39fa54988dbe54ae8e12689376768a71a02a2d55c0ed76ff",
+          "jeytech-safety-data-by-brand/src/Admin/AuditPage.php": "787822a5f955f736670c0c3b2f03c5e77d7e0016ce55c8533b650d11fa566684",
+          "jeytech-safety-data-by-brand/src/Admin/SettingsPage.php": "34215fea9522a79f59937e8012e0cf66c59ac523bccdbfaed01b758da03ac7f0",
+          "jeytech-safety-data-by-brand/src/Core/Compat.php": "b70a2f620bf28d257756477da496accf752a7c7b5904869ebfaa8a81fc8ffd32",
+          "jeytech-safety-data-by-brand/src/Core/Requirements.php": "a7a522586ce4a384dfe2f000b167cce54a258fe9f18e2a43ad062aa5ced5fe15",
+          "jeytech-safety-data-by-brand/src/Core/Autoloader.php": "6a576db370411a2b7bf04991ad9c5f529251bba558ecb1ccd17ae4bbd9a2cfa8",
+          "jeytech-safety-data-by-brand/jeytech-safety-data-by-brand.php": "e0c7d34aed4e6d247eac14a248a75b584bf97359e0f985685999f6f90c3051b3",
+          "jeytech-safety-data-by-brand/uninstall.php": "4702782ae1867373f1c6d930dbd934df0cbd985543d9c1bcbad5a90fc927bb63",
+          "jeytech-safety-data-by-brand/assets/admin.css": "5e010bd34e4fa2d3edeb9fa7384b47ebb819073458b50a94132d1eda576509c5",
+          "jeytech-safety-data-by-brand/readme.txt": "91c8260edacea0591802be260880b4f5f61158a50587518617561cf5c98c8d0d"
+        }
+      },
+      {
+        "name": "catalog-po",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "catalog-pot",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "catalog-mo",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "catalog-l10n.php",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "catalog-PO",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "catalog-POT",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "catalog-MO",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "catalog-L10N.PHP",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "empty-language-directory",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "nested-language-directory",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "mixed-case-language-directory",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "catalog-symlink",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      },
+      {
+        "name": "stale-archive",
+        "passed": true,
+        "exitCode": 1,
+        "archiveAbsent": true
+      }
+    ]
+  }
+}

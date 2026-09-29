@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plugins - JeyTech Safety Data by Brand for WooCommerce - Stable Readme (latest release)\n"
-"PO-Revision-Date: 2026-09-28 07:40+0000\n"
+"PO-Revision-Date: 2026-09-29 12:32+0000\n"
 "Last-Translator: JeyTech\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -19,7 +19,7 @@ msgid ""
 "Add GPSR manufacturer and safety information to every product — set it once "
 "per brand, audit what&#039;s missing."
 msgstr ""
-"Ajoutez les données fabricant et de sécurité GPSR à chaque produit : une "
+"Ajoutez les données fabricant et de sécurité GPSR à chaque produit : une "
 "saisie par marque et un audit des données manquantes."
 
 #. Plugin name.
@@ -41,7 +41,7 @@ msgid ""
 "the same section appended to the product content, since the Single Product "
 "block renders no classic tabs."
 msgstr ""
-"Oui. Les thèmes classiques affichent un onglet « Sécurité du produit ». Les "
+"Oui. Les thèmes classiques affichent un onglet « Sécurité du produit ». Les "
 "thèmes à blocs affichent la même section à la suite du contenu du produit, "
 "car le bloc Produit unique ne génère pas les onglets classiques."
 
@@ -59,7 +59,7 @@ msgid ""
 " leave a product field empty to inherit it, or fill it to override."
 msgstr ""
 "Une fois par marque dans Produits → Marques. Les produits héritent des "
-"données de leur marque : laissez un champ du produit vide pour conserver cet"
+"données de leur marque : laissez un champ du produit vide pour conserver cet"
 " héritage, ou renseignez-le pour remplacer la valeur de la marque."
 
 #. Found in faq paragraph.
@@ -67,29 +67,29 @@ msgid ""
 "No tool can. The plugin displays the data you enter in the right place; you "
 "remain responsible for its accuracy. When in doubt, ask a professional."
 msgstr ""
-"Aucun outil ne peut le garantir. Le plugin affiche les données que vous "
-"saisissez à l’endroit prévu ; vous restez responsable de leur exactitude. En"
+"Aucun outil ne peut le garantir. Le extension affiche les données que vous "
+"saisissez à l’endroit prévu ; vous restez responsable de leur exactitude. En"
 " cas de doute, consultez un professionnel."
 
 #. Found in faq header.
 msgid "What if a product has no brand?"
-msgstr "Que faire si un produit n’a pas de marque ?"
+msgstr "Que faire si un produit n’a pas de marque ?"
 
 #. Found in faq header.
 msgid "Does it work with block themes?"
-msgstr "Le plugin fonctionne-t-il avec les thèmes à blocs ?"
+msgstr "Le extension fonctionne-t-il avec les thèmes à blocs ?"
 
 #. Found in faq header.
 msgid "What about variable products?"
-msgstr "Comment sont gérés les produits variables ?"
+msgstr "Comment sont gérés les produits variables ?"
 
 #. Found in faq header.
 msgid "Where do I enter the manufacturer data?"
-msgstr "Où saisir les données du fabricant ?"
+msgstr "Où saisir les données du fabricant ?"
 
 #. Found in faq header.
 msgid "Does it make my shop compliant?"
-msgstr "Le plugin garantit-il la conformité de ma boutique ?"
+msgstr "Le extension garantit-il la conformité de ma boutique ?"
 
 #. Found in installation list item.
 msgid ""
@@ -117,7 +117,7 @@ msgstr ""
 msgid ""
 "Install and activate the plugin (WooCommerce 9.6 or later must be active)."
 msgstr ""
-"Installez et activez le plugin. WooCommerce 9.6 ou ultérieur doit être "
+"Installez et activez le extension. WooCommerce 9.6 ou ultérieur doit être "
 "actif."
 
 #. Found in description paragraph.
@@ -140,7 +140,7 @@ msgstr ""
 
 #. Found in description paragraph.
 msgid "Safety Data by Brand adds them where they belong:"
-msgstr "Safety Data by Brand ajoute ces informations aux endroits prévus :"
+msgstr "Safety Data by Brand ajoute ces informations aux endroits prévus :"
 
 #. Found in description paragraph.
 msgid ""
@@ -160,7 +160,7 @@ msgid ""
 "<strong>Audit list</strong> — the admin screen lists the products still "
 "missing GPSR data."
 msgstr ""
-"<strong>Liste d’audit</strong> : un écran d’administration liste les "
+"<strong>Liste d’audit</strong> : un écran d’administration liste les "
 "produits dont les données GPSR sont encore incomplètes."
 
 #. Found in description list item.
@@ -169,7 +169,7 @@ msgid ""
 "classic themes, an appended section on block themes. Nothing shows when a "
 "product has no data."
 msgstr ""
-"<strong>Section « Sécurité du produit » sur la fiche</strong> : un onglet "
+"<strong>Section « Sécurité du produit » sur la fiche</strong> : un onglet "
 "sur les thèmes classiques et une section ajoutée au contenu sur les thèmes à"
 " blocs. Aucun bloc n’apparaît lorsque le produit ne contient aucune donnée."
 
@@ -178,7 +178,7 @@ msgid ""
 "<strong>Safety warnings per product</strong> — care instructions shown with "
 "the manufacturer block."
 msgstr ""
-"<strong>Avertissements de sécurité par produit</strong> : les consignes "
+"<strong>Avertissements de sécurité par produit</strong> : les consignes "
 "d’utilisation sont affichées avec les coordonnées du fabricant."
 
 #. Found in description list item.
@@ -186,7 +186,7 @@ msgid ""
 "<strong>Override per product</strong> — any field can be replaced on a "
 "single product. Variations use their parent's data."
 msgstr ""
-"<strong>Remplacement par produit</strong> : chaque champ peut être renseigné"
+"<strong>Remplacement par produit</strong> : chaque champ peut être renseigné"
 " différemment pour un produit. Les variations utilisent les données de leur "
 "produit parent."
 
@@ -196,7 +196,7 @@ msgid ""
 "responsible person live on the brand (WooCommerce core taxonomy). Every "
 "product of the brand inherits them."
 msgstr ""
-"<strong>Une saisie par marque</strong> : le fabricant, son adresse, son "
+"<strong>Une saisie par marque</strong> : le fabricant, son adresse, son "
 "e-mail et la personne responsable UE sont enregistrés sur la marque native "
 "de WooCommerce. Tous les produits de cette marque en héritent."
 
@@ -221,6 +221,6 @@ msgid ""
 "safety warnings, product page section for classic and block themes, audit "
 "list."
 msgstr ""
-"Première version : données fabricant par marque et remplacement par produit,"
+"Première version : données fabricant par marque et remplacement par produit,"
 " avertissements de sécurité, section dédiée sur les thèmes classiques et à "
 "blocs, liste d’audit."
